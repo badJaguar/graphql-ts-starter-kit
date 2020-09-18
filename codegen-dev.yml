@@ -1,0 +1,22 @@
+overwrite: true
+schema: "https://api-eu-central-1.graphcms.com/v2/ckcqemumr0wds01xs8ngea55p/master" //Here path to schema should be placed (☝remove comment then)
+documents: "src/**/*.graphql"
+generates:
+  src/__generated__/types.ts:
+    - typescript
+  src/:
+    preset: near-operation-file
+    presetConfig:
+      folder: __generated__
+      extension: .tsx
+      baseTypesPath: __generated__/types.ts
+    plugins:
+      - typescript-operations
+      - typescript-react-apollo
+    config:
+      nonOptionalTypename: true
+      dedupeOperationSuffix: true
+      withComponent: true
+      withHooks: true
+      withHOC: false
+      reactApolloVersion: 2

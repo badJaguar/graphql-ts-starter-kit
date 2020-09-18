@@ -1,0 +1,25 @@
+.parent {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+  width: 100vw;
+  height: 100vh;
+
+  .header {
+    padding: 1rem;
+    grid-column: 1/4;
+  }
+
+  .main {
+    display: grid;
+    grid-column: 2/4;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .footer {
+    display: grid;
+    grid-column: 2 / 4;
+    background-color: rgb(153, 188, 228);
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,15 @@
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexSpacer {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+}

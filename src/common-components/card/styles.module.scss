@@ -1,0 +1,41 @@
+@import "../../styles/colors";
+
+.wrapper {
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 2rem;
+  padding-top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 800px;
+  height: 70%;
+
+  .header {
+    color: $color-white;
+  }
+
+  .centerContent {
+    color: $color-white;
+  }
+
+  .footerContent {
+    background-color: $color-blue;
+    margin: -2rem;
+    border-radius: 20px;
+    height: 21%;
+    border: none;
+    padding: 1rem;
+    color: $color-white;
+    position: relative;
+  }
+
+  .icon {
+    position: absolute;
+    right: 25px;
+    bottom: 88px;
+    background-color: white;
+    border-radius: 100px;
+    padding: 5px;
+    display: flex;
+  }
+}
