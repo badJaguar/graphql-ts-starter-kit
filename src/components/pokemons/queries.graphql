@@ -1,0 +1,10 @@
+query GetAllPokemons {
+	pokemons {
+		results {
+			id
+			name
+			image
+			url
+		}
+	}
+}

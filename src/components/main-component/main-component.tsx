@@ -1,22 +1,22 @@
 import React from "react";
-import { Logo } from "../../assets/icons";
-import { Salutation } from "../salutation/salutation";
+import logo from "../../assets/pokeapi-logo.png";
+import { Pokemons } from "../pokemons/pokemons";
 import styles from "./styles.module.scss";
 
 
 export const MainComponent = () => {
 
-    return (
-        <div className={ styles.parent }>
-            <header className={ styles.header }>
-                <div className={ styles.headerContent }>
-                    <Logo />
-                </div>
-            </header>
-            <main className={ styles.main }>
-                <Salutation />
-            </main>
-            <footer className={ styles.footer }>Footer</footer>
+  return (
+    <div className={styles.parent}>
+      <header className={styles.header}>
+        <div className={styles.headerContent}>
+          <img src={logo} alt="" />
         </div>
-    );
+      </header>
+      <main className={styles.main}>
+        <Pokemons />
+      </main>
+      <footer className={styles.footer}>Footer</footer>
+    </div>
+  );
 };

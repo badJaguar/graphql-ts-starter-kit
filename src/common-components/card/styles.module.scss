@@ -3,15 +3,19 @@
 .wrapper {
   box-sizing: border-box;
   border-radius: 20px;
-  padding: 2rem;
+  padding: 2em;
+  padding-top: 0;
   padding-top: 0;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 800px;
-  height: 70%;
+  height: 374px;
+  width: 400px;
+  border: 1px solid rgb(168, 168, 168);
+
 
   .header {
-    color: $color-white;
+    color: rgb(27, 27, 27);
   }
 
   .centerContent {
@@ -27,15 +31,5 @@
     padding: 1rem;
     color: $color-white;
     position: relative;
-  }
-
-  .icon {
-    position: absolute;
-    right: 25px;
-    bottom: 88px;
-    background-color: white;
-    border-radius: 100px;
-    padding: 5px;
-    display: flex;
   }
 }

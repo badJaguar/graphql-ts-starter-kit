@@ -1,63 +1,63 @@
 {
-    "name": "GraphQL Starter Kit",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
-        "@apollo/client": "^3.0.2",
-        "@apollo/react-components": "^3.1.5",
-        "@apollo/react-hooks": "^3.1.5",
-        "@testing-library/jest-dom": "^4.2.4",
-        "@testing-library/react": "^9.3.2",
-        "@testing-library/user-event": "^7.1.2",
-        "@types/graphql": "^14.5.0",
-        "@types/jest": "^24.0.0",
-        "@types/node": "^12.0.0",
-        "@types/react": "^16.9.0",
-        "@types/react-dom": "^16.9.0",
-        "@types/sass": "^1.16.0",
-        "apollo-cache-inmemory": "^1.6.5",
-        "apollo-client": "^2.6.8",
-        "apollo-link-context": "^1.0.20",
-        "apollo-link-http": "^1.5.17",
-        "dotenv": "^8.2.0",
-        "evergreen-ui": "^4.28.1",
-        "graphql": "^15.3.0",
-        "node-sass": "^4.14.1",
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1",
-        "react-scripts": "3.4.1",
-        "typescript": "~3.7.2"
-    },
-    "devDependencies": {
-        "@graphql-codegen/cli": "1.13.5",
-        "@graphql-codegen/near-operation-file-preset": "^1.13.5",
-        "@graphql-codegen/typescript": "1.13.5",
-        "@graphql-codegen/typescript-operations": "^1.13.5",
-        "@graphql-codegen/typescript-react-apollo": "1.13.5",
-        "@playlyfe/gql": "^2.6.2",
-        "react-element-to-jsx-string": "^14.3.1",
-        "typescript-plugin-css-modules": "^2.3.0"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "generate": "graphql-codegen --config codegen-dev.yml"
-    },
-    "eslintConfig": {
-        "extends": "react-app"
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    }
+  "name": "graphql-starter-kit",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.0.2",
+    "@apollo/react-components": "^3.1.5",
+    "@apollo/react-hooks": "^3.1.5",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/graphql": "^14.5.0",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/sass": "^1.16.0",
+    "apollo-cache-inmemory": "^1.6.5",
+    "apollo-client": "^2.6.8",
+    "apollo-link-context": "^1.0.20",
+    "apollo-link-http": "^1.5.17",
+    "dotenv": "^8.2.0",
+    "evergreen-ui": "^4.28.1",
+    "graphql": "^15.3.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "typescript": "~3.7.2"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "1.13.5",
+    "@graphql-codegen/near-operation-file-preset": "^1.13.5",
+    "@graphql-codegen/typescript": "1.13.5",
+    "@graphql-codegen/typescript-operations": "^1.13.5",
+    "@graphql-codegen/typescript-react-apollo": "1.13.5",
+    "@playlyfe/gql": "^2.6.2",
+    "react-element-to-jsx-string": "^14.3.1",
+    "typescript-plugin-css-modules": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "generate": "graphql-codegen --config codegen-dev.yml"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
