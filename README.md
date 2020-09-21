@@ -15,7 +15,7 @@ TypeScript
 Based on create-react-app
 
 -
-👆VERY IMPORTANT
+👆VERY IMPORTANT&nbsp;
 For correct working add these extentions for your IDE:
 1) [Apollo-GraphQL](https://marketplace.visualstudio.com/items?itemName=apollographql.vscode-apollo)
 2) [GraphQL](https://marketplace.visualstudio.com/items?itemName=Prisma.vscode-graphql)  for an awesome developer experience
