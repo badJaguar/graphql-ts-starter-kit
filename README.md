@@ -14,9 +14,9 @@ TypeScript
 
 Based on create-react-app
 
--
-👆VERY IMPORTANT&nbsp;
-For correct working add these extentions for your IDE:
+
+👆VERY IMPORTANT
+&nbsp;For correct working add these extentions for your IDE:
 1) [Apollo-GraphQL](https://marketplace.visualstudio.com/items?itemName=apollographql.vscode-apollo)
 2) [GraphQL](https://marketplace.visualstudio.com/items?itemName=Prisma.vscode-graphql)  for an awesome developer experience
 3) [GQLX-VS-Code-Extension](https://marketplace.visualstudio.com/items?itemName=FlorianRappl.gqlx-vscode)
