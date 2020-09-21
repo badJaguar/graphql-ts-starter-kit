@@ -17,11 +17,11 @@ Based on create-react-app
 -
 👆VERY IMPORTANT
 For correct working add these extentions for your IDE:
-1) [Apollo-GraphQL] (https://marketplace.visualstudio.com/items?itemName=apollographql.vscode-apollo)
-2) [GraphQL] (https://marketplace.visualstudio.com/items?itemName=Prisma.vscode-graphql)  for an awesome developer experience
-3) [GQLX-VS-Code-Extension] (https://marketplace.visualstudio.com/items?itemName=FlorianRappl.gqlx-vscode)
-4) [GraphQL-for-VSCode] (https://marketplace.visualstudio.com/items?itemName=kumar-harsh.graphql-for-vscode)
-5) [vscode-graphql] (https://marketplace.visualstudio.com/items?itemName=luyizhi.vscode-graphql)
+1) [Apollo-GraphQL](https://marketplace.visualstudio.com/items?itemName=apollographql.vscode-apollo)
+2) [GraphQL](https://marketplace.visualstudio.com/items?itemName=Prisma.vscode-graphql)  for an awesome developer experience
+3) [GQLX-VS-Code-Extension](https://marketplace.visualstudio.com/items?itemName=FlorianRappl.gqlx-vscode)
+4) [GraphQL-for-VSCode](https://marketplace.visualstudio.com/items?itemName=kumar-harsh.graphql-for-vscode)
+5) [vscode-graphql](https://marketplace.visualstudio.com/items?itemName=luyizhi.vscode-graphql)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
