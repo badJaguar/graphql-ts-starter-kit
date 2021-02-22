@@ -1,6 +1,6 @@
 overwrite: true
 schema: "https://mazipan-gql-pokeapi.herokuapp.com/graphql"
-documents: "src/**/*.graphql"
+documents: "src/**/*.gql"
 generates:
   src/__generated__/types.ts:
     - typescript

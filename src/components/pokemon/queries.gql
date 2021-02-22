@@ -1,0 +1,10 @@
+query getPokemonByName($name: String!) {
+	pokemon(name: $name) {
+		abilities {
+			ability {
+				name
+				url
+			}
+		}
+	}
+}

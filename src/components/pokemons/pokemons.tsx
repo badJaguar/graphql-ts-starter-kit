@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { Card } from "../../common-components/card/card";
+import { Pokemon } from "../pokemon/pokemon";
 import { useGetAllPokemonsQuery } from "./__generated__/queries";
 
 
@@ -16,11 +16,12 @@ export const Pokemons = memo(() => {
       {
         data?.pokemons?.results?.map(pokemonItem => {
           return (
-            <Card
+            <Pokemon
               key={ pokemonItem?.id }
               backgroundImageUrl={ pokemonItem?.image! }
               headerContent={ pokemonItem?.name! }
               footerContent={ pokemonItem?.url! }
+              pokemonName={ pokemonItem?.name! }
             />
           );
         })

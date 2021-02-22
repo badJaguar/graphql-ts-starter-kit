@@ -1,10 +1,10 @@
+import * as Types from '../../../__generated__/types';
+
+import gql from 'graphql-tag';
+import * as React from 'react';
 import * as ApolloReactCommon from '@apollo/react-common';
 import * as ApolloReactComponents from '@apollo/react-components';
 import * as ApolloReactHooks from '@apollo/react-hooks';
-import gql from 'graphql-tag';
-import * as React from 'react';
-import * as Types from '../../../__generated__/types';
-
 export type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
 
 export type GetAllPokemonsQueryVariables = Types.Exact<{ [key: string]: never; }>;
@@ -12,17 +12,13 @@ export type GetAllPokemonsQueryVariables = Types.Exact<{ [key: string]: never; }
 
 export type GetAllPokemonsQuery = (
   { __typename: 'Query' }
-  & {
-    pokemons?: Types.Maybe<(
-      { __typename: 'PokemonList' }
-      & {
-        results?: Types.Maybe<Array<Types.Maybe<(
-          { __typename: 'PokemonItem' }
-          & Pick<Types.PokemonItem, 'id' | 'name' | 'image' | 'url'>
-        )>>>
-      }
-    )>
-  }
+  & { pokemons?: Types.Maybe<(
+    { __typename: 'PokemonList' }
+    & { results?: Types.Maybe<Array<Types.Maybe<(
+      { __typename: 'PokemonItem' }
+      & Pick<Types.PokemonItem, 'id' | 'name' | 'image' | 'url'>
+    )>>> }
+  )> }
 );
 
 
@@ -40,10 +36,10 @@ export const GetAllPokemonsDocument = gql`
     `;
 export type GetAllPokemonsComponentProps = Omit<ApolloReactComponents.QueryComponentOptions<GetAllPokemonsQuery, GetAllPokemonsQueryVariables>, 'query'>;
 
-export const GetAllPokemonsComponent = (props: GetAllPokemonsComponentProps) => (
-  <ApolloReactComponents.Query<GetAllPokemonsQuery, GetAllPokemonsQueryVariables> query={GetAllPokemonsDocument} {...props} />
-);
-
+    export const GetAllPokemonsComponent = (props: GetAllPokemonsComponentProps) => (
+      <ApolloReactComponents.Query<GetAllPokemonsQuery, GetAllPokemonsQueryVariables> query={GetAllPokemonsDocument} {...props} />
+    );
+    
 
 /**
  * __useGetAllPokemonsQuery__
@@ -61,11 +57,11 @@ export const GetAllPokemonsComponent = (props: GetAllPokemonsComponentProps) => 
  * });
  */
 export function useGetAllPokemonsQuery(baseOptions?: ApolloReactHooks.QueryHookOptions<GetAllPokemonsQuery, GetAllPokemonsQueryVariables>) {
-  return ApolloReactHooks.useQuery<GetAllPokemonsQuery, GetAllPokemonsQueryVariables>(GetAllPokemonsDocument, baseOptions);
-}
+        return ApolloReactHooks.useQuery<GetAllPokemonsQuery, GetAllPokemonsQueryVariables>(GetAllPokemonsDocument, baseOptions);
+      }
 export function useGetAllPokemonsLazyQuery(baseOptions?: ApolloReactHooks.LazyQueryHookOptions<GetAllPokemonsQuery, GetAllPokemonsQueryVariables>) {
-  return ApolloReactHooks.useLazyQuery<GetAllPokemonsQuery, GetAllPokemonsQueryVariables>(GetAllPokemonsDocument, baseOptions);
-}
+          return ApolloReactHooks.useLazyQuery<GetAllPokemonsQuery, GetAllPokemonsQueryVariables>(GetAllPokemonsDocument, baseOptions);
+        }
 export type GetAllPokemonsQueryHookResult = ReturnType<typeof useGetAllPokemonsQuery>;
 export type GetAllPokemonsLazyQueryHookResult = ReturnType<typeof useGetAllPokemonsLazyQuery>;
 export type GetAllPokemonsQueryResult = ApolloReactCommon.QueryResult<GetAllPokemonsQuery, GetAllPokemonsQueryVariables>;
