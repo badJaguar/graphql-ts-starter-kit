@@ -1,7 +1,7 @@
 import React, { memo, useMemo, useState } from "react";
 import { FlexCol, FlexSpacer } from "../../common-components/flex-components/flex-components";
+import { PokemonAbilities } from "./abilities/pokemon-abilities";
 import styles from "./styles.module.scss";
-import { useGetPokemonByNameQuery } from "./__generated__/queries";
 
 export interface CardProps {
   headerContent: string;
@@ -31,21 +31,5 @@ export const Pokemon = memo((props: CardProps) => {
         showMoreInfo && <PokemonAbilities name={ pokemonName } />
       }
     </FlexCol>
-  );
-});
-
-const PokemonAbilities = memo(({ name }: { name: string; }) => {
-
-  const { data, loading } = useGetPokemonByNameQuery({ variables: { name: name! } });
-
-  if (loading && !data?.pokemon) {
-    return <>Loading</>;
-  }
-  return (
-    <ul style={ { backgroundColor: "white" } }>
-      { data?.pokemon?.abilities?.map((item, index) => {
-        return <li key={ index }>{ item?.ability?.name }</li>;
-      }) }
-    </ul>
   );
 });
