@@ -1,34 +1,30 @@
-import React, { useEffect, useState } from "react";
+import React, { memo } from "react";
 import { Card } from "../../common-components/card/card";
-import { PokemonItem } from "../../__generated__/types";
 import { useGetAllPokemonsQuery } from "./__generated__/queries";
 
 
-export const Pokemons = () => {
+export const Pokemons = memo(() => {
 
-  const $pokemonsQuery = useGetAllPokemonsQuery();
+  const { data, loading } = useGetAllPokemonsQuery();
 
-  const [pokemons, setPokemons] = useState<PokemonItem[]>()
-
-  useEffect(() => {
-    if (!$pokemonsQuery.loading && $pokemonsQuery.data?.pokemons?.results) {
-      setPokemons($pokemonsQuery.data?.pokemons?.results as PokemonItem[])
-    }
-  }, [$pokemonsQuery.loading, $pokemonsQuery.data])
+  if (loading && !data?.pokemons?.results) {
+    return <>Loading...</>;
+  }
 
   return (
     <>
       {
-        pokemons?.map(pokemonItem => {
+        data?.pokemons?.results?.map(pokemonItem => {
           return (
             <Card
-              backgroundImageUrl={pokemonItem.image!}
-              headerContent={pokemonItem.name!}
-              footerContent={pokemonItem.url!}
+              key={ pokemonItem?.id }
+              backgroundImageUrl={ pokemonItem?.image! }
+              headerContent={ pokemonItem?.name! }
+              footerContent={ pokemonItem?.url! }
             />
-          )
+          );
         })
       }
     </>
-  )
-}
+  );
+});

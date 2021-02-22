@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { FlexCol, FlexSpacer } from "../flex-components/flex-components";
 import styles from "./styles.module.scss";
 
@@ -8,7 +8,7 @@ export interface CardProps {
   backgroundImageUrl: string;
 }
 
-export const Card = (props: CardProps) => {
+export const Card = memo((props: CardProps) => {
 
   const { headerContent, footerContent, backgroundImageUrl } = props;
 
@@ -23,4 +23,4 @@ export const Card = (props: CardProps) => {
       {footerContent}
     </FlexCol>
   )
-}
+});

@@ -23,6 +23,9 @@ Based on create-react-app
 4) [GraphQL-for-VSCode](https://marketplace.visualstudio.com/items?itemName=kumar-harsh.graphql-for-vscode)
 5) [vscode-graphql](https://marketplace.visualstudio.com/items?itemName=luyizhi.vscode-graphql)
 
+PLAYGROUND FOR POKEMONS GraphQL
+https://graphql-pokeapi.vercel.app/api/graphql
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
